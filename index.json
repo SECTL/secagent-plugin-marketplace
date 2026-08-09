@@ -63,6 +63,14 @@
           "sha256": "A057E3B62B9A16C3ECC4C27B5170987E052510C68EB8753FBD310AEA3A12E930",
           "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
           "platforms": ["darwin", "linux", "win32"]
+        },
+        {
+          "version": "2.1.1",
+          "minHostApiVersion": 1,
+          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.1/secscore-connector-2.1.1.zip",
+          "sha256": "23F0C5DC12B045455180BA911F6481CADF2C15D71F44AC235D92CE5E5526A844",
+          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
+          "platforms": ["darwin", "linux", "win32"]
         }
       ]
     }
