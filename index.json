@@ -15,6 +15,14 @@
           "sha256": "B2B643E1CD29BF8FD87C1CDCE3D1247C4F0C2688A21D6A25F65F8EF09C996A75",
           "permissions": ["agent.tools", "agent.skills", "network.http"],
           "platforms": ["darwin", "linux", "win32"]
+        },
+        {
+          "version": "0.1.1",
+          "minHostApiVersion": 1,
+          "assetUrl": "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.1/secrandom-0.1.1.zip",
+          "sha256": "CF34D05F17DD32C0BED600F2D0B6F418CAA3E70FA30599D6CB950276D491A3AD",
+          "permissions": ["agent.tools", "agent.skills", "network.http"],
+          "platforms": ["darwin", "linux", "win32"]
         }
       ]
     },
