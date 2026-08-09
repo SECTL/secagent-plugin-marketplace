@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T10:33:00.000Z",
+  "generatedAt": "2026-08-09T10:43:00.000Z",
   "plugins": [
     {
       "id": "secrandom",
@@ -77,6 +77,14 @@
           "minHostApiVersion": 1,
           "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.2/secscore-connector-2.1.2.zip",
           "sha256": "6A5DD47C7D78B16EB2594B1CD330848E556C88F7CAF35A6E0CDF57CA28DDE722",
+          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
+          "platforms": ["darwin", "linux", "win32"]
+        },
+        {
+          "version": "2.1.3",
+          "minHostApiVersion": 1,
+          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.3/secscore-connector-2.1.3.zip",
+          "sha256": "35DBCCD8FA743340E49B516847367580073777C10D33261FFB750268674DAB2A",
           "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
           "platforms": ["darwin", "linux", "win32"]
         }
