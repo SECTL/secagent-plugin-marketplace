@@ -1,11 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-03T00:00:00.000Z",
+  "generatedAt": "2026-08-09T00:00:00.000Z",
   "plugins": [
     {
+      "id": "secrandom",
+      "name": "SecRandom Connector",
+      "description": "Connects SecAgent to the local SecRandom HTTP API for roster management and scoped draws.",
+      "repository": "https://github.com/SECTL/SecRandom-SecAgent-Connector",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "minHostApiVersion": 1,
+          "assetUrl": "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.0/secrandom-0.1.0.zip",
+          "sha256": "B2B643E1CD29BF8FD87C1CDCE3D1247C4F0C2688A21D6A25F65F8EF09C996A75",
+          "permissions": ["agent.tools", "agent.skills", "network.http"],
+          "platforms": ["darwin", "linux", "win32"]
+        }
+      ]
+    },
+    {
       "id": "classisland-connector",
-      "name": "ClassIsland联动插件",
-      "description": "连接 ClassIsland，动态提供 ClassIsland 工具和 Skill。",
+      "name": "ClassIsland Connector",
+      "description": "Connects SecAgent to ClassIsland and provides ClassIsland tools and Skills.",
       "repository": "https://github.com/SECTL/ClassIsland-SecAgent-Connector",
       "versions": [
         {
