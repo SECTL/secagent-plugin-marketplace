@@ -41,6 +41,22 @@
           "platforms": ["darwin", "linux", "win32"]
         }
       ]
+    },
+    {
+      "id": "secscore-connector",
+      "name": "SecScore 云端操作",
+      "description": "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
+      "repository": "https://github.com/SECTL/SecScore-SecAgent-Connector",
+      "versions": [
+        {
+          "version": "2.0.0",
+          "minHostApiVersion": 1,
+          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.0.0/secscore-connector-2.0.0.zip",
+          "sha256": "190ACD1993C4BE2B9BD2AAD38C8B5D4B6E360995D811B403DD9548127216A09D",
+          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
+          "platforms": ["darwin", "linux", "win32"]
+        }
+      ]
     }
   ],
   "signature": "REPLACE_WITH_MARKETPLACE_ED25519_SIGNATURE"
