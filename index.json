@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T10:43:00.000Z",
+  "generatedAt": "2026-08-10T09:47:08.8957422Z",
   "plugins": [
     {
       "id": "secrandom",
@@ -53,6 +53,14 @@
           "minHostApiVersion": 1,
           "assetUrl": "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.0/iccce-connector-1.0.0.zip",
           "sha256": "84D46664BA21C50F72EBD73BD0BD639AC1691A4B119521E4ABC24E08417E2016",
+          "permissions": ["agent.tools", "agent.skills", "network.http"],
+          "platforms": ["darwin", "linux", "win32"]
+        },
+        {
+          "version": "1.0.1",
+          "minHostApiVersion": 1,
+          "assetUrl": "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.1/iccce-connector-1.0.1.zip",
+          "sha256": "F61FBC7A8034B9BC9ECD1C7498FAABC9A89D7CDC6451A1DD85CCA8C13F60CA65",
           "permissions": ["agent.tools", "agent.skills", "network.http"],
           "platforms": ["darwin", "linux", "win32"]
         }
