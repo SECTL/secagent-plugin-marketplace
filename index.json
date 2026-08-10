@@ -43,6 +43,22 @@
       ]
     },
     {
+      "id": "iccce-connector",
+      "name": "ICC-CE Connector",
+      "description": "Connects SecAgent to the local ICC-CE HTTP API and provides ICC-CE tools and Skills.",
+      "repository": "https://github.com/SECTL/ICC-CE-SecAgent-Connector",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostApiVersion": 1,
+          "assetUrl": "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.0/iccce-connector-1.0.0.zip",
+          "sha256": "84D46664BA21C50F72EBD73BD0BD639AC1691A4B119521E4ABC24E08417E2016",
+          "permissions": ["agent.tools", "agent.skills", "network.http"],
+          "platforms": ["darwin", "linux", "win32"]
+        }
+      ]
+    },
+    {
       "id": "secscore-connector",
       "name": "SecScore 云端操作",
       "description": "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
