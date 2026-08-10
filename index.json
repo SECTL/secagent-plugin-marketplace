@@ -1,119 +1,220 @@
-{
-  "schemaVersion": 1,
-  "generatedAt": "2026-08-10T09:47:08.8957422Z",
-  "plugins": [
-    {
-      "id": "secrandom",
-      "name": "SecRandom Connector",
-      "description": "Connects SecAgent to the local SecRandom HTTP API for roster management and scoped draws.",
-      "repository": "https://github.com/SECTL/SecRandom-SecAgent-Connector",
-      "versions": [
-        {
-          "version": "0.1.0",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.0/secrandom-0.1.0.zip",
-          "sha256": "B2B643E1CD29BF8FD87C1CDCE3D1247C4F0C2688A21D6A25F65F8EF09C996A75",
-          "permissions": ["agent.tools", "agent.skills", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        },
-        {
-          "version": "0.1.1",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.1/secrandom-0.1.1.zip",
-          "sha256": "CF34D05F17DD32C0BED600F2D0B6F418CAA3E70FA30599D6CB950276D491A3AD",
-          "permissions": ["agent.tools", "agent.skills", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        }
-      ]
-    },
-    {
-      "id": "classisland-connector",
-      "name": "ClassIsland Connector",
-      "description": "Connects SecAgent to ClassIsland and provides ClassIsland tools and Skills.",
-      "repository": "https://github.com/SECTL/ClassIsland-SecAgent-Connector",
-      "versions": [
-        {
-          "version": "1.0.1",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/ClassIsland-SecAgent-Connector/releases/download/v1.0.1/classisland-connector-1.0.1.zip",
-          "sha256": "861D4F5A7159D3D2FF3CC580B3867D57BCB4D8B29B680B67F914DD2A82F39699",
-          "permissions": ["agent.tools", "agent.skills", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        }
-      ]
-    },
-    {
-      "id": "iccce-connector",
-      "name": "ICC-CE Connector",
-      "description": "Connects SecAgent to the local ICC-CE HTTP API and provides ICC-CE tools and Skills.",
-      "repository": "https://github.com/SECTL/ICC-CE-SecAgent-Connector",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.0/iccce-connector-1.0.0.zip",
-          "sha256": "84D46664BA21C50F72EBD73BD0BD639AC1691A4B119521E4ABC24E08417E2016",
-          "permissions": ["agent.tools", "agent.skills", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        },
-        {
-          "version": "1.0.1",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.1/iccce-connector-1.0.1.zip",
-          "sha256": "F61FBC7A8034B9BC9ECD1C7498FAABC9A89D7CDC6451A1DD85CCA8C13F60CA65",
-          "permissions": ["agent.tools", "agent.skills", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        }
-      ]
-    },
-    {
-      "id": "secscore-connector",
-      "name": "SecScore 云端操作",
-      "description": "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
-      "repository": "https://github.com/SECTL/SecScore-SecAgent-Connector",
-      "versions": [
-        {
-          "version": "2.0.0",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.0.0/secscore-connector-2.0.0.zip",
-          "sha256": "190ACD1993C4BE2B9BD2AAD38C8B5D4B6E360995D811B403DD9548127216A09D",
-          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        },
-        {
-          "version": "2.1.0",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.0/secscore-connector-2.1.0.zip",
-          "sha256": "A057E3B62B9A16C3ECC4C27B5170987E052510C68EB8753FBD310AEA3A12E930",
-          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        },
-        {
-          "version": "2.1.1",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.1/secscore-connector-2.1.1.zip",
-          "sha256": "23F0C5DC12B045455180BA911F6481CADF2C15D71F44AC235D92CE5E5526A844",
-          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        },
-        {
-          "version": "2.1.2",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.2/secscore-connector-2.1.2.zip",
-          "sha256": "6A5DD47C7D78B16EB2594B1CD330848E556C88F7CAF35A6E0CDF57CA28DDE722",
-          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        },
-        {
-          "version": "2.1.3",
-          "minHostApiVersion": 1,
-          "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.3/secscore-connector-2.1.3.zip",
-          "sha256": "35DBCCD8FA743340E49B516847367580073777C10D33261FFB750268674DAB2A",
-          "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
-          "platforms": ["darwin", "linux", "win32"]
-        }
-      ]
-    }
-  ],
-  "signature": "REPLACE_WITH_MARKETPLACE_ED25519_SIGNATURE"
+﻿{
+    "schemaVersion":  1,
+    "generatedAt":  "2026-08-10T10:23:19.7428902Z",
+    "plugins":  [
+                    {
+                        "id":  "secrandom",
+                        "name":  "SecRandom Connector",
+                        "description":  "Connects SecAgent to the local SecRandom HTTP API for roster management and scoped draws.",
+                        "repository":  "https://github.com/SECTL/SecRandom-SecAgent-Connector",
+                        "versions":  [
+                                         {
+                                             "version":  "0.1.0",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.0/secrandom-0.1.0.zip",
+                                             "sha256":  "B2B643E1CD29BF8FD87C1CDCE3D1247C4F0C2688A21D6A25F65F8EF09C996A75",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "0.1.1",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.1/secrandom-0.1.1.zip",
+                                             "sha256":  "CF34D05F17DD32C0BED600F2D0B6F418CAA3E70FA30599D6CB950276D491A3AD",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         }
+                                     ]
+                    },
+                    {
+                        "id":  "classisland-connector",
+                        "name":  "ClassIsland Connector",
+                        "description":  "Connects SecAgent to ClassIsland and provides ClassIsland tools and Skills.",
+                        "repository":  "https://github.com/SECTL/ClassIsland-SecAgent-Connector",
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.1",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/ClassIsland-SecAgent-Connector/releases/download/v1.0.1/classisland-connector-1.0.1.zip",
+                                             "sha256":  "861D4F5A7159D3D2FF3CC580B3867D57BCB4D8B29B680B67F914DD2A82F39699",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         }
+                                     ]
+                    },
+                    {
+                        "id":  "iccce-connector",
+                        "name":  "ICC-CE Connector",
+                        "description":  "Connects SecAgent to the local ICC-CE HTTP API and provides ICC-CE tools and Skills.",
+                        "repository":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector",
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.0",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.0/iccce-connector-1.0.0.zip",
+                                             "sha256":  "84D46664BA21C50F72EBD73BD0BD639AC1691A4B119521E4ABC24E08417E2016",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "1.0.1",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.1/iccce-connector-1.0.1.zip",
+                                             "sha256":  "F61FBC7A8034B9BC9ECD1C7498FAABC9A89D7CDC6451A1DD85CCA8C13F60CA65",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "1.0.2",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.2/iccce-connector-1.0.2.zip",
+                                             "sha256":  "0B26D58537C5A793481199C7963944436F4534696CCD561C623E4E959CDBD793",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         }
+                                     ]
+                    },
+                    {
+                        "id":  "secscore-connector",
+                        "name":  "SecScore 浜戠鎿嶄綔",
+                        "description":  "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
+                        "repository":  "https://github.com/SECTL/SecScore-SecAgent-Connector",
+                        "versions":  [
+                                         {
+                                             "version":  "2.0.0",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.0.0/secscore-connector-2.0.0.zip",
+                                             "sha256":  "190ACD1993C4BE2B9BD2AAD38C8B5D4B6E360995D811B403DD9548127216A09D",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.settings",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "2.1.0",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.0/secscore-connector-2.1.0.zip",
+                                             "sha256":  "A057E3B62B9A16C3ECC4C27B5170987E052510C68EB8753FBD310AEA3A12E930",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.settings",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "2.1.1",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.1/secscore-connector-2.1.1.zip",
+                                             "sha256":  "23F0C5DC12B045455180BA911F6481CADF2C15D71F44AC235D92CE5E5526A844",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.settings",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "2.1.2",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.2/secscore-connector-2.1.2.zip",
+                                             "sha256":  "6A5DD47C7D78B16EB2594B1CD330848E556C88F7CAF35A6E0CDF57CA28DDE722",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.settings",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "2.1.3",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.3/secscore-connector-2.1.3.zip",
+                                             "sha256":  "35DBCCD8FA743340E49B516847367580073777C10D33261FFB750268674DAB2A",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.settings",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         }
+                                     ]
+                    }
+                ],
+    "signature":  "REPLACE_WITH_MARKETPLACE_ED25519_SIGNATURE"
 }
