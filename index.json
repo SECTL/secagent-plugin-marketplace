@@ -123,6 +123,31 @@
                                      ]
                     },
                     {
+                        "id":  "markdown-handdrawn",
+                        "name":  "Markdown 鎵嬪啓 SVG",
+                        "description":  "Renders Markdown, GFM tables, KaTeX formulas and Mermaid diagrams as hand-drawn SVG, with preview, export and ICC-CE insertion support.",
+                        "repository":  "https://github.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin",
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.1",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin/releases/download/v1.0.1/markdown-handdrawn-1.0.1.zip",
+                                             "sha256":  "F2AE53733BC8302673DC592A7B5910B9980ACFCB326B117BBD5A63F27C71BF22",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.preview",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         }
+                                     ]
+                    },
+                    {
                         "id":  "secscore-connector",
                         "name":  "SecScore 浜戠鎿嶄綔",
                         "description":  "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
