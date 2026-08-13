@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  1,
-    "generatedAt":  "2026-08-13T12:48:00.000Z",
+    "generatedAt":  "2026-08-13T12:52:00.000Z",
     "plugins":  [
                     {
                         "id":  "secrandom",
@@ -145,7 +145,7 @@
                     },
                     {
                         "id":  "markdown-handdrawn",
-                        "name":  "Markdown 鎵嬪啓 SVG",
+                        "name":  "Markdown 手写 SVG",
                         "description":  "Renders Markdown, GFM tables, KaTeX formulas and Mermaid diagrams as hand-drawn SVG, with preview, export and ICC-CE insertion support.",
                         "repository":  "https://github.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin",
                         "readme":  "https://raw.githubusercontent.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin/v1.0.1/README.md",
@@ -171,7 +171,7 @@
                     },
                     {
                         "id":  "secscore-connector",
-                        "name":  "SecScore 浜戠鎿嶄綔",
+                        "name":  "SecScore 云端操作",
                         "description":  "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
                         "repository":  "https://github.com/SECTL/SecScore-SecAgent-Connector",
                         "readme":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/v2.1.3/README.md",
