@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  1,
-    "generatedAt":  "2026-08-13T12:33:51.855Z",
+    "generatedAt":  "2026-08-13T12:43:19.042Z",
     "plugins":  [
                     {
                         "id":  "secrandom",
@@ -64,6 +64,7 @@
                         "name":  "ClassIsland Connector",
                         "description":  "Connects SecAgent to ClassIsland and provides ClassIsland tools and Skills.",
                         "repository":  "https://github.com/SECTL/ClassIsland-SecAgent-Connector",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/v1.0.1/icon.svg",
                         "versions":  [
                                          {
                                              "version":  "1.0.1",
