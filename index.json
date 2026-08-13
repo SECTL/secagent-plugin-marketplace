@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  1,
-    "generatedAt":  "2026-08-10T10:23:19.7428902Z",
+    "generatedAt":  "2026-08-13T12:33:51.855Z",
     "plugins":  [
                     {
                         "id":  "secrandom",
@@ -29,6 +29,22 @@
                                              "minHostApiVersion":  1,
                                              "assetUrl":  "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.1/secrandom-0.1.1.zip",
                                              "sha256":  "CF34D05F17DD32C0BED600F2D0B6F418CAA3E70FA30599D6CB950276D491A3AD",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "0.1.2",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.2/secrandom-0.1.2.zip",
+                                             "sha256":  "512AAF13DA1D170B8C955746DC022781FB1BE41D14C2C10334F7CE8D386F197E",
                                              "permissions":  [
                                                                  "agent.tools",
                                                                  "agent.skills",
