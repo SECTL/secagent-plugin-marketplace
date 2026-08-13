@@ -7,6 +7,7 @@
                         "name":  "SecRandom Connector",
                         "description":  "Connects SecAgent to the local SecRandom HTTP API for roster management and scoped draws.",
                         "repository":  "https://github.com/SECTL/SecRandom-SecAgent-Connector",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.2/icon.svg",
                         "versions":  [
                                          {
                                              "version":  "0.1.0",
