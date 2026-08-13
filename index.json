@@ -65,6 +65,7 @@
                         "description":  "Connects SecAgent to ClassIsland and provides ClassIsland tools and Skills.",
                         "repository":  "https://github.com/SECTL/ClassIsland-SecAgent-Connector",
                         "icon":  "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/v1.0.1/icon.svg",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/v1.0.1/README.md",
                         "versions":  [
                                          {
                                              "version":  "1.0.1",
