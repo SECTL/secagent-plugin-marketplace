@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  1,
-    "generatedAt":  "2026-08-13T12:52:00.000Z",
+    "generatedAt":  "2026-08-14T00:00:00.000Z",
     "plugins":  [
                     {
                         "id":  "secrandom",
@@ -255,6 +255,28 @@
                                                                  "agent.settings",
                                                                  "network.http"
                                                              ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         }
+                                     ]
+                    },
+                    {
+                        "id":  "sectl.project-builder",
+                        "format":  "agent",
+                        "name":  "SECTL Project Builder",
+                        "description":  "Provides a portable project-creation workflow through the project-builder Agent Skill.",
+                        "repository":  "https://github.com/SECTL/SecAgent-Project-Builder-Agent-Plugin",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/SecAgent-Project-Builder-Agent-Plugin/v1.0.0/README.md",
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.0",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecAgent-Project-Builder-Agent-Plugin/releases/download/v1.0.0/sectl.project-builder-1.0.0.zip",
+                                             "sha256":  "4F390759C4F9A6D3BB0A44AFAB12C2EB473F2278DF8B1ED7E9984689244A979F",
+                                             "permissions":  [],
                                              "platforms":  [
                                                                "darwin",
                                                                "linux",
