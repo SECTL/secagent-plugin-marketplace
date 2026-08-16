@@ -4,11 +4,11 @@
     "plugins":  [
                     {
                         "id":  "secrandom",
-                        "name":  "SecRandom Connector",
-                        "description":  "Connects SecAgent to the local SecRandom HTTP API for roster management and scoped draws.",
+                        "name":  "SecRandom 点名联动",
+                        "description":  "让 SecAgent 可以操作SecRandom进行随机点名等操作",
                         "repository":  "https://github.com/SECTL/SecRandom-SecAgent-Connector",
-                        "icon":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.2/icon.svg",
-                        "readme":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.2/README.md",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.3/icon.svg",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.3/README.md",
                         "versions":  [
                                          {
                                              "version":  "0.1.0",
@@ -57,16 +57,32 @@
                                                                "linux",
                                                                "win32"
                                                            ]
+                                         },
+                                         {
+                                             "version":  "0.1.3",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.3/secrandom-0.1.3.zip",
+                                             "sha256":  "75CC5326F2881920B3AED3E2F9273E4EE0798DFAEA07E66A23C725DB759D3594",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
                                          }
                                      ]
                     },
                     {
                         "id":  "classisland-connector",
-                        "name":  "ClassIsland Connector",
-                        "description":  "Connects SecAgent to ClassIsland and provides ClassIsland tools and Skills.",
+                        "name":  "ClassIsland联动",
+                        "description":  "让 SecAgent 帮你操作 ClassIsland 配置档案、换课、调整设置...",
                         "repository":  "https://github.com/SECTL/ClassIsland-SecAgent-Connector",
-                        "icon":  "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/v1.0.1/icon.svg",
-                        "readme":  "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/v1.0.1/README.md",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/v1.0.2/icon.svg",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/v1.0.2/README.md",
                         "versions":  [
                                          {
                                              "version":  "1.0.1",
@@ -83,16 +99,32 @@
                                                                "linux",
                                                                "win32"
                                                            ]
+                                         },
+                                         {
+                                             "version":  "1.0.2",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/ClassIsland-SecAgent-Connector/releases/download/v1.0.2/classisland-connector-1.0.2.zip",
+                                             "sha256":  "C9E776C74D396545527C635B849C09193A2F17EB1B13A4EAD31581F2E848AA71",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
                                          }
                                      ]
                     },
                     {
                         "id":  "iccce-connector",
-                        "name":  "ICC-CE Connector",
-                        "description":  "Connects SecAgent to the local ICC-CE HTTP API and provides ICC-CE tools and Skills.",
+                        "name":  "ICC-CE 联动",
+                        "description":  "让 SecAgent 读取画板内容或向画板插入内容",
                         "repository":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector",
-                        "icon":  "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/v1.0.3/icon.svg",
-                        "readme":  "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/v1.0.3/README.md",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/v1.0.4/icon.svg",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/v1.0.4/README.md",
                         "versions":  [
                                          {
                                              "version":  "1.0.0",
@@ -157,6 +189,20 @@
                                                                "linux",
                                                                "win32"
                                                            ]
+                                         },
+                                         {
+                                             "version":  "1.0.4",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.4/iccce-connector-1.0.4.zip",
+                                             "sha256":  "03B1E2B08DF06E66DDE4AE21E3FAD9A970DD073D14C94BB5FA27B180462A6439",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "win32"
+                                                           ]
                                          }
                                      ]
                     },
@@ -188,11 +234,11 @@
                     },
                     {
                         "id":  "secscore-connector",
-                        "name":  "SecScore 云端操作",
-                        "description":  "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
+                        "name":  "SecScore 积分操作",
+                        "description":  "让 SecAgent 可以操作SecRandom进行随机点名等操作",
                         "repository":  "https://github.com/SECTL/SecScore-SecAgent-Connector",
-                        "icon":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/v2.1.4/icon.svg",
-                        "readme":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/v2.1.4/README.md",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/v2.1.5/icon.svg",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/v2.1.5/README.md",
                         "versions":  [
                                          {
                                              "version":  "2.0.0",
@@ -284,6 +330,23 @@
                                              "minHostApiVersion":  1,
                                              "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.4/secscore-connector-2.1.4.zip",
                                              "sha256":  "3D870385E7745AAAE1A14B55F7105C0A825F107F92358126505636DF71FC5745",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.settings",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "2.1.5",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.5/secscore-connector-2.1.5.zip",
+                                             "sha256":  "AF9C7E43839B85FD34BC2D6725028CADE0FF91B30D35B7F386FD205D222AC7BB",
                                              "permissions":  [
                                                                  "agent.tools",
                                                                  "agent.skills",
