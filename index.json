@@ -141,6 +141,22 @@
                                                                "linux",
                                                                "win32"
                                                            ]
+                                         },
+                                         {
+                                             "version":  "1.0.3",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.3/iccce-connector-1.0.3.zip",
+                                             "sha256":  "CDEA84BC2BE1F8CD05CEF4595ED148782317DA1865EA4655589FD45F59C58F02",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
                                          }
                                      ]
                     },
@@ -160,22 +176,6 @@
                                                                  "agent.tools",
                                                                  "agent.skills",
                                                                  "agent.preview",
-                                                                 "network.http"
-                                                             ],
-                                             "platforms":  [
-                                                               "darwin",
-                                                               "linux",
-                                                               "win32"
-                                                           ]
-                                         },
-                                         {
-                                             "version":  "1.0.3",
-                                             "minHostApiVersion":  1,
-                                             "assetUrl":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.3/iccce-connector-1.0.3.zip",
-                                             "sha256":  "CDEA84BC2BE1F8CD05CEF4595ED148782317DA1865EA4655589FD45F59C58F02",
-                                             "permissions":  [
-                                                                 "agent.tools",
-                                                                 "agent.skills",
                                                                  "network.http"
                                                              ],
                                              "platforms":  [
@@ -278,6 +278,23 @@
                                                                "linux",
                                                                "win32"
                                                            ]
+                                         },
+                                         {
+                                             "version":  "2.1.4",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.4/secscore-connector-2.1.4.zip",
+                                             "sha256":  "3D870385E7745AAAE1A14B55F7105C0A825F107F92358126505636DF71FC5745",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.settings",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
                                          }
                                      ]
                     },
@@ -295,23 +312,6 @@
                                              "assetUrl":  "https://github.com/SECTL/SecAgent-Project-Builder-Agent-Plugin/releases/download/v1.0.0/sectl.project-builder-1.0.0.zip",
                                              "sha256":  "4F390759C4F9A6D3BB0A44AFAB12C2EB473F2278DF8B1ED7E9984689244A979F",
                                              "permissions":  [],
-                                             "platforms":  [
-                                                               "darwin",
-                                                               "linux",
-                                                               "win32"
-                                                           ]
-                                         },
-                                         {
-                                             "version":  "2.1.4",
-                                             "minHostApiVersion":  1,
-                                             "assetUrl":  "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.4/secscore-connector-2.1.4.zip",
-                                             "sha256":  "3D870385E7745AAAE1A14B55F7105C0A825F107F92358126505636DF71FC5745",
-                                             "permissions":  [
-                                                                 "agent.tools",
-                                                                 "agent.skills",
-                                                                 "agent.settings",
-                                                                 "network.http"
-                                                             ],
                                              "platforms":  [
                                                                "darwin",
                                                                "linux",
