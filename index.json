@@ -91,7 +91,7 @@
                         "name":  "ICC-CE Connector",
                         "description":  "Connects SecAgent to the local ICC-CE HTTP API and provides ICC-CE tools and Skills.",
                         "repository":  "https://github.com/SECTL/ICC-CE-SecAgent-Connector",
-                        "icon":  "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/main/icon.svg",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/v1.0.3/icon.svg",
                         "readme":  "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/v1.0.3/README.md",
                         "versions":  [
                                          {
@@ -191,7 +191,7 @@
                         "name":  "SecScore 云端操作",
                         "description":  "Connects SecAgent to SecScore Sync Server for cloud scoring, account/class selection, and roster lookup.",
                         "repository":  "https://github.com/SECTL/SecScore-SecAgent-Connector",
-                        "icon":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/main/icon.svg",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/v2.1.4/icon.svg",
                         "readme":  "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/v2.1.4/README.md",
                         "versions":  [
                                          {
