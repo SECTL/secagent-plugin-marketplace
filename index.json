@@ -1,14 +1,14 @@
 ﻿{
     "schemaVersion":  1,
-    "generatedAt":  "2026-08-16T00:00:00.000Z",
+    "generatedAt":  "2026-08-17T00:00:00.000Z",
     "plugins":  [
                     {
                         "id":  "secrandom",
                         "name":  "SecRandom 点名联动",
                         "description":  "让 SecAgent 可以操作SecRandom进行随机点名等操作",
                         "repository":  "https://github.com/SECTL/SecRandom-SecAgent-Connector",
-                        "icon":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.3/icon.svg",
-                        "readme":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.3/README.md",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.4/icon.svg",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/v0.1.4/README.md",
                         "versions":  [
                                          {
                                              "version":  "0.1.0",
@@ -66,6 +66,23 @@
                                              "permissions":  [
                                                                  "agent.tools",
                                                                  "agent.skills",
+                                                                 "network.http"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "0.1.4",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.4/secrandom-0.1.4.zip",
+                                             "sha256":  "2368A860763F67DD09682FA141F4F5D303665D33CF1E64471B1D634A4EEE1D98",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills",
+                                                                 "agent.pre_rules",
                                                                  "network.http"
                                                              ],
                                              "platforms":  [
