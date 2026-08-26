@@ -1,6 +1,6 @@
 ﻿{
     "schemaVersion":  1,
-    "generatedAt":  "2026-08-19T00:00:00.000Z",
+    "generatedAt":  "2026-08-26T00:00:00.000Z",
     "plugins":  [
                     {
                         "id":  "secrandom",
@@ -383,13 +383,29 @@
                         "name":  "屏幕理解",
                         "description":  "让 SecAgent 获取当前整个虚拟桌面截图并交给模型理解",
                         "repository":  "https://github.com/SECTL/SecAgent-Screen-Understanding-Plugin",
-                        "readme":  "https://raw.githubusercontent.com/SECTL/SecAgent-Screen-Understanding-Plugin/v0.1.0/README.md",
+                        "icon":  "https://raw.githubusercontent.com/SECTL/SecAgent-Screen-Understanding-Plugin/v0.1.1/icon.svg",
+                        "readme":  "https://raw.githubusercontent.com/SECTL/SecAgent-Screen-Understanding-Plugin/v0.1.1/README.md",
                         "versions":  [
                                          {
                                              "version":  "0.1.0",
                                              "minHostApiVersion":  1,
                                              "assetUrl":  "https://github.com/SECTL/SecAgent-Screen-Understanding-Plugin/releases/download/v0.1.0/screen-understanding-0.1.0.zip",
                                              "sha256":  "176C218C5B744370112717E655CFA25E6ED377A9EDCD6F55D55789A6AE048D87",
+                                             "permissions":  [
+                                                                 "agent.tools",
+                                                                 "agent.skills"
+                                                             ],
+                                             "platforms":  [
+                                                               "darwin",
+                                                               "linux",
+                                                               "win32"
+                                                           ]
+                                         },
+                                         {
+                                             "version":  "0.1.1",
+                                             "minHostApiVersion":  1,
+                                             "assetUrl":  "https://github.com/SECTL/SecAgent-Screen-Understanding-Plugin/releases/download/v0.1.1/screen-understanding-0.1.1.zip",
+                                             "sha256":  "5BD6F10F0592896E5D2899DFDF8BFC270A7DC828E834AFC56463E1C0795DF180",
                                              "permissions":  [
                                                                  "agent.tools",
                                                                  "agent.skills"
