@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "classisland-connector",
+  "format": "secagent",
+  "name": "ClassIsland 联动",
+  "description": "让 SecAgent 帮你操作 ClassIsland 配置档案、换课和设置",
+  "repository": "https://github.com/SECTL/ClassIsland-SecAgent-Connector",
+  "icon": "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/main/icon.svg",
+  "readme": "https://raw.githubusercontent.com/SECTL/ClassIsland-SecAgent-Connector/main/README.md",
+  "minHostApiVersion": 1,
+  "permissions": ["agent.tools", "agent.skills", "agent.prompts", "network.http"],
+  "platforms": ["darwin", "linux", "win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "ClassIsland-SecAgent-Connector",
+    "assetName": "classisland-connector-{version}.zip",
+    "includePrerelease": false
+  }
+}

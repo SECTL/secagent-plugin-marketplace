@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "markdown-handdrawn",
+  "format": "secagent",
+  "name": "Markdown 手写 SVG",
+  "description": "将 Markdown、GFM 表格、KaTeX 公式和 Mermaid 图表渲染为手写风格 SVG，并支持预览、导出和 ICC-CE 插入",
+  "repository": "https://github.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin",
+  "icon": "https://raw.githubusercontent.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin/main/icon.svg",
+  "readme": "https://raw.githubusercontent.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin/main/README.md",
+  "minHostApiVersion": 1,
+  "permissions": ["agent.tools", "agent.skills", "agent.preview", "network.http"],
+  "platforms": ["darwin", "linux", "win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "SecAgent-Markdown-Handdrawn-Plugin",
+    "assetName": "markdown-handdrawn-{version}.zip",
+    "includePrerelease": false
+  }
+}

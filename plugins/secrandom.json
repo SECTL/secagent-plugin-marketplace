@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "secrandom",
+  "format": "secagent",
+  "name": "SecRandom 点名联动",
+  "description": "让 SecAgent 可以操作 SecRandom 进行随机点名等操作",
+  "repository": "https://github.com/SECTL/SecRandom-SecAgent-Connector",
+  "icon": "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/main/icon.svg",
+  "readme": "https://raw.githubusercontent.com/SECTL/SecRandom-SecAgent-Connector/main/README.md",
+  "minHostApiVersion": 1,
+  "permissions": ["agent.tools", "agent.skills", "agent.pre_rules", "network.http"],
+  "platforms": ["darwin", "linux", "win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "SecRandom-SecAgent-Connector",
+    "assetName": "secrandom-{version}.zip",
+    "includePrerelease": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "iccce-connector",
+  "format": "secagent",
+  "name": "ICC-CE 联动",
+  "description": "让 SecAgent 读取画板内容或向画板插入内容",
+  "repository": "https://github.com/SECTL/ICC-CE-SecAgent-Connector",
+  "icon": "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/main/icon.svg",
+  "readme": "https://raw.githubusercontent.com/SECTL/ICC-CE-SecAgent-Connector/main/README.md",
+  "minHostApiVersion": 1,
+  "permissions": ["agent.tools", "agent.skills", "network.http"],
+  "platforms": ["win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "ICC-CE-SecAgent-Connector",
+    "assetName": "iccce-connector-{version}.zip",
+    "includePrerelease": false
+  }
+}

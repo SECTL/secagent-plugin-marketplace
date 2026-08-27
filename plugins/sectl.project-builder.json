@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "sectl.project-builder",
+  "format": "agent",
+  "name": "项目开发",
+  "description": "Provides a portable project-creation workflow through the project-builder Agent Skill.",
+  "repository": "https://github.com/SECTL/SecAgent-Project-Builder-Agent-Plugin",
+  "icon": "https://raw.githubusercontent.com/SECTL/SecAgent-Project-Builder-Agent-Plugin/master/icon.png",
+  "readme": "https://raw.githubusercontent.com/SECTL/SecAgent-Project-Builder-Agent-Plugin/master/README.md",
+  "minHostApiVersion": 1,
+  "permissions": [],
+  "platforms": ["darwin", "linux", "win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "SecAgent-Project-Builder-Agent-Plugin",
+    "assetName": "sectl.project-builder-{version}.zip",
+    "includePrerelease": false
+  }
+}

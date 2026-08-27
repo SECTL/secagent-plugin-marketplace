@@ -1,7 +1,53 @@
 # SecAgent Plugin Marketplace
 
-The marketplace accepts both native SecAgent plugin packages and Agent Plugins 1.0.0 packages. Agent Plugin entries use `format: "agent"` and point to a ZIP containing `plugin.json`, `skills/`, and optionally `mcp.json`.
+This repository contains only signed plugin metadata. Plugin implementations and releases remain in their own repositories.
 
-这是独立的插件市场索引仓库，不保存插件实现。当前索引包含 SecAgent 的 ClassIsland 联动插件，并指向其 GitHub Release 资产。
+## Layout
 
-客户端流程：下载 `index.json` → 校验索引签名 → 选择与宿主兼容的版本 → 下载 Release zip → 校验 SHA-256 与资产签名 → 安装。
+```text
+index.json
+plugins/<plugin-id>.json
+scripts/generate-index.mjs
+scripts/validate-index.mjs
+```
+
+`index.json` is `schemaVersion: 2` and contains one reference per plugin:
+
+```json
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-27T00:00:00.000Z",
+  "plugins": [
+    {
+      "id": "secscore-connector",
+      "path": "plugins/secscore-connector.json",
+      "sha256": "..."
+    }
+  ],
+  "signature": "base64-ed25519-signature"
+}
+```
+
+Each plugin file describes stable metadata and a GitHub Release asset template. It must not contain a version, historical versions, a fixed tag URL, or a fixed asset URL. SecAgent resolves `releases/latest`, filters draft/prerelease releases, matches `{version}` in `assetName`, and requires either GitHub's `sha256:<digest>` asset field or an adjacent `<asset>.sha256` asset.
+
+## Signing
+
+Generate the official Ed25519 key pair outside the repository. Put only the PKCS#8 private-key PEM in the GitHub Actions repository secret `MARKETPLACE_ED25519_PRIVATE_KEY`. The public-key PEM is embedded in SecAgent as its official trust root. Do not commit either private key or a private-key file.
+
+The workflow in `.github/workflows/generate-index.yml` regenerates and signs `index.json` whenever a plugin metadata file changes. A plugin release does not require a commit here: publish the matching Release in that plugin's repository.
+
+For local generation:
+
+```powershell
+$env:MARKETPLACE_ED25519_PRIVATE_KEY = Get-Content -Raw .\marketplace-private-key.pem
+node .\scripts\generate-index.mjs
+```
+
+For local validation:
+
+```powershell
+$env:MARKETPLACE_ED25519_PUBLIC_KEY = Get-Content -Raw .\marketplace-public-key.pem
+node .\scripts\validate-index.mjs
+```
+
+Release tags may be `v<semver>` or `<semver>`. The release asset must use the name declared by the plugin metadata, for example `secscore-connector-{version}.zip` becomes `secscore-connector-2.1.6.zip`.

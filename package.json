@@ -1,0 +1,9 @@
+{
+  "name": "secagent-plugin-marketplace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate-index": "node scripts/generate-index.mjs",
+    "validate-index": "node scripts/validate-index.mjs"
+  }
+}

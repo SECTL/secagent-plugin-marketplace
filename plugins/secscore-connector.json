@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "secscore-connector",
+  "format": "secagent",
+  "name": "SecScore 积分操作",
+  "description": "让 SecAgent 可以查询 SecScore 班级积分并执行加分、减分和扣分操作",
+  "repository": "https://github.com/SECTL/SecScore-SecAgent-Connector",
+  "icon": "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/main/icon.svg",
+  "readme": "https://raw.githubusercontent.com/SECTL/SecScore-SecAgent-Connector/main/README.md",
+  "minHostApiVersion": 1,
+  "permissions": ["agent.tools", "agent.skills", "agent.settings", "network.http"],
+  "platforms": ["darwin", "linux", "win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "SecScore-SecAgent-Connector",
+    "assetName": "secscore-connector-{version}.zip",
+    "includePrerelease": false
+  }
+}

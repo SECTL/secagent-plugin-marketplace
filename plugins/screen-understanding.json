@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "screen-understanding",
+  "format": "secagent",
+  "name": "屏幕理解",
+  "description": "让 SecAgent 获取当前整个虚拟桌面截图并交给模型理解",
+  "repository": "https://github.com/SECTL/SecAgent-Screen-Understanding-Plugin",
+  "icon": "https://raw.githubusercontent.com/SECTL/SecAgent-Screen-Understanding-Plugin/main/icon.svg",
+  "readme": "https://raw.githubusercontent.com/SECTL/SecAgent-Screen-Understanding-Plugin/main/README.md",
+  "minHostApiVersion": 1,
+  "permissions": ["agent.tools", "agent.skills"],
+  "platforms": ["darwin", "linux", "win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "SecAgent-Screen-Understanding-Plugin",
+    "assetName": "screen-understanding-{version}.zip",
+    "includePrerelease": false
+  }
+}
