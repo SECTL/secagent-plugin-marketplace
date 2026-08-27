@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-27T00:00:00.000Z",
+  "generatedAt": "2026-08-27T14:10:48.327Z",
   "plugins": [
     {
       "id": "classisland-connector",
@@ -38,5 +38,5 @@
       "sha256": "96a72a478034bc54b077a4e1700c8240ddae030dfb5e7d7456385326691c3560"
     }
   ],
-  "signature": "voCyqktA6o1fUjnRh/14PvZZddm8MoRnRhUMLt3hJNe1RK8XEFcc33Ip/S5G8bJhdYhxzIGc19+fJSatAVohCA=="
+  "signature": "9qskrqhcT4Sqw9dH5MPaPkFWu+Rkb1RKauG4TLLsvFaU3IP6sVtauuqM+LXRw/fI6wkGCuJqBhjOcVBsW3n8Dw=="
 }
