@@ -1,42 +1,151 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-27T14:10:48.327Z",
+  "generatedAt": "2026-08-28T05:40:32.062Z",
   "plugins": [
     {
       "id": "classisland-connector",
       "path": "plugins/classisland-connector.json",
-      "sha256": "e410371b6e05b2e8e98a365c51d9e840537222700569c6d6fa29da9f3b54d76d"
+      "sha256": "e410371b6e05b2e8e98a365c51d9e840537222700569c6d6fa29da9f3b54d76d",
+      "latest": {
+        "version": "1.0.2",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/ClassIsland-SecAgent-Connector/releases/download/v1.0.2/classisland-connector-1.0.2.zip",
+        "sha256": "c9e776c74d396545527c635b849c09193a2f17eb1b13a4ead31581f2e848aa71",
+        "permissions": [
+          "agent.tools",
+          "agent.skills",
+          "agent.prompts",
+          "network.http"
+        ],
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ]
+      }
     },
     {
       "id": "iccce-connector",
       "path": "plugins/iccce-connector.json",
-      "sha256": "623839526cddde50c2195e290f0453c93de9c3b657d30c7b9e07c253d8491c70"
+      "sha256": "623839526cddde50c2195e290f0453c93de9c3b657d30c7b9e07c253d8491c70",
+      "latest": {
+        "version": "1.0.4",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/ICC-CE-SecAgent-Connector/releases/download/v1.0.4/iccce-connector-1.0.4.zip",
+        "sha256": "03b1e2b08df06e66dde4ae21e3fad9a970dd073d14c94bb5fa27b180462a6439",
+        "permissions": [
+          "agent.tools",
+          "agent.skills",
+          "network.http"
+        ],
+        "platforms": [
+          "win32"
+        ]
+      }
     },
     {
       "id": "markdown-handdrawn",
       "path": "plugins/markdown-handdrawn.json",
-      "sha256": "8d833387bab90535a7956f1c4722761be359cea3fa5c5913f046c294216d5ae2"
+      "sha256": "8d833387bab90535a7956f1c4722761be359cea3fa5c5913f046c294216d5ae2",
+      "latest": {
+        "version": "1.0.1",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/SecAgent-Markdown-Handdrawn-Plugin/releases/download/v1.0.1/markdown-handdrawn-1.0.1.zip",
+        "sha256": "f2ae53733bc8302673dc592a7b5910b9980acfcb326b117bbd5a63f27c71bf22",
+        "permissions": [
+          "agent.tools",
+          "agent.skills",
+          "agent.preview",
+          "network.http"
+        ],
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ]
+      }
     },
     {
       "id": "screen-understanding",
       "path": "plugins/screen-understanding.json",
-      "sha256": "3e763361431fdc2adf6a9e2dc91eaea177eb91bf01e30985b6458d898ae28501"
+      "sha256": "3e763361431fdc2adf6a9e2dc91eaea177eb91bf01e30985b6458d898ae28501",
+      "latest": {
+        "version": "0.1.2",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/SecAgent-Screen-Understanding-Plugin/releases/download/v0.1.2/screen-understanding-0.1.2.zip",
+        "sha256": "2b104995740a294fc420ebf9d811a03dc4bd148c06d9414b10a4ed1485912528",
+        "permissions": [
+          "agent.tools",
+          "agent.skills"
+        ],
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ]
+      }
     },
     {
       "id": "secrandom",
       "path": "plugins/secrandom.json",
-      "sha256": "19983b2e71c08dcc36dfc06ee1b908738256d76687cb7344df9d65902f1598fb"
+      "sha256": "19983b2e71c08dcc36dfc06ee1b908738256d76687cb7344df9d65902f1598fb",
+      "latest": {
+        "version": "0.1.4",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/SecRandom-SecAgent-Connector/releases/download/v0.1.4/secrandom-0.1.4.zip",
+        "sha256": "2368a860763f67dd09682fa141f4f5d303665d33cf1e64471b1d634a4eee1d98",
+        "permissions": [
+          "agent.tools",
+          "agent.skills",
+          "agent.pre_rules",
+          "network.http"
+        ],
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ]
+      }
     },
     {
       "id": "secscore-connector",
       "path": "plugins/secscore-connector.json",
-      "sha256": "380ec693ed7e891d4acf0b96466e56383f847cf2371f019326e357201d3788a2"
+      "sha256": "380ec693ed7e891d4acf0b96466e56383f847cf2371f019326e357201d3788a2",
+      "latest": {
+        "version": "2.1.6",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/SecScore-SecAgent-Connector/releases/download/v2.1.6/secscore-connector-2.1.6.zip",
+        "sha256": "571702f036a711b9002900968b1dff9db565e6cfa3dabe251859041d27e7fbce",
+        "permissions": [
+          "agent.tools",
+          "agent.skills",
+          "agent.settings",
+          "network.http"
+        ],
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ]
+      }
     },
     {
       "id": "sectl.project-builder",
       "path": "plugins/sectl.project-builder.json",
-      "sha256": "96a72a478034bc54b077a4e1700c8240ddae030dfb5e7d7456385326691c3560"
+      "sha256": "96a72a478034bc54b077a4e1700c8240ddae030dfb5e7d7456385326691c3560",
+      "latest": {
+        "version": "1.0.0",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/SecAgent-Project-Builder-Agent-Plugin/releases/download/v1.0.0/sectl.project-builder-1.0.0.zip",
+        "sha256": "4f390759c4f9a6d3bb0a44afab12c2eb473f2278df8b1ed7e9984689244a979f",
+        "permissions": [],
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ]
+      }
     }
   ],
-  "signature": "9qskrqhcT4Sqw9dH5MPaPkFWu+Rkb1RKauG4TLLsvFaU3IP6sVtauuqM+LXRw/fI6wkGCuJqBhjOcVBsW3n8Dw=="
+  "signature": "ATXDvXPmsQ3v20FwMhsG4LzkGW4h/CBs+Az8dqo5a5DoiitTufe0GfZSstWUWcSg1VXn8BXOywJ8GNEb+zo/DA=="
 }
