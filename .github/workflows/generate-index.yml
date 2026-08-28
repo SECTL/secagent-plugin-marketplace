@@ -22,6 +22,7 @@ jobs:
       - name: Generate and sign index
         env:
           MARKETPLACE_ED25519_PRIVATE_KEY: ${{ secrets.MARKETPLACE_ED25519_PRIVATE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/generate-index.mjs
       - name: Commit index
         run: |

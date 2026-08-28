@@ -1,3 +1,9 @@
-# 市场索引约定
+# Marketplace index contract
 
-市场 `index.json` 必须使用 Ed25519 签名。每个版本记录必须包括 Release 资产 URL、zip 的 SHA-256、资产签名、最低宿主 API 版本、权限摘要和支持平台。客户端不会把索引中未声明的权限静默授权给插件。
+The signed `index.json` contains each plugin metadata hash and the resolved latest
+Release: SemVer, fixed asset URL, SHA-256, minimum host API version, permissions,
+and supported platforms.
+
+Release resolution runs in GitHub Actions with the workflow token. SecAgent clients
+consume the signed result and do not query the GitHub Release API. They still verify
+the downloaded package SHA-256 before installation.

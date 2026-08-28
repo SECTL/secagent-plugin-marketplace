@@ -1,6 +1,6 @@
 # SecAgent Plugin Marketplace
 
-This repository contains only signed plugin metadata. Plugin implementations and releases remain in their own repositories.
+This repository contains signed plugin metadata and the latest resolved Release information. Plugin implementations and releases remain in their own repositories.
 
 ## Layout
 
@@ -28,7 +28,7 @@ scripts/validate-index.mjs
 }
 ```
 
-Each plugin file describes stable metadata and a GitHub Release asset template. It must not contain a version, historical versions, a fixed tag URL, or a fixed asset URL. SecAgent resolves `releases/latest`, filters draft/prerelease releases, matches `{version}` in `assetName`, and requires either GitHub's `sha256:<digest>` asset field or an adjacent `<asset>.sha256` asset.
+Each plugin file describes stable metadata and a GitHub Release asset template. The generator resolves that template in GitHub Actions and writes the selected version, fixed asset URL, and SHA-256 into the signed `index.json`. SecAgent clients consume those signed values and do not call the GitHub Release API. The generator can calculate the SHA-256 from the asset when GitHub does not provide a digest or sidecar file.
 
 ## Signing
 

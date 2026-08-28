@@ -21,8 +21,23 @@ for (const reference of index.plugins) {
   if (sha256.toLowerCase() !== reference.sha256.toLowerCase()) throw new Error(`SHA-256 mismatch: ${reference.id}`);
   const metadata = JSON.parse(bytes.toString("utf8").replace(/^\uFEFF/, ""));
   if (metadata.schemaVersion !== 1 || metadata.id !== reference.id) throw new Error(`Invalid plugin metadata: ${reference.id}`);
+  if (!isMarketplaceVersion(reference.latest)) throw new Error(`Missing or invalid resolved Release: ${reference.id}`);
 }
 console.log(`Validated ${index.plugins.length} signed plugin entries.`);
+
+function isMarketplaceVersion(value) {
+  return value
+    && typeof value.version === "string"
+    && Number.isFinite(value.minHostApiVersion)
+    && typeof value.assetUrl === "string"
+    && /^https:\/\//i.test(value.assetUrl)
+    && typeof value.sha256 === "string"
+    && /^[a-fA-F0-9]{64}$/.test(value.sha256)
+    && Array.isArray(value.permissions)
+    && value.permissions.every((permission) => typeof permission === "string")
+    && Array.isArray(value.platforms)
+    && value.platforms.every((platform) => typeof platform === "string");
+}
 
 function canonicalize(value) {
   if (value === null) return "null";
