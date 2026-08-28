@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-28T05:40:32.062Z",
+  "generatedAt": "2026-08-28T13:34:48.575Z",
   "plugins": [
     {
       "id": "classisland-connector",
@@ -70,10 +70,10 @@
       "path": "plugins/screen-understanding.json",
       "sha256": "3e763361431fdc2adf6a9e2dc91eaea177eb91bf01e30985b6458d898ae28501",
       "latest": {
-        "version": "0.1.2",
+        "version": "0.1.3",
         "minHostApiVersion": 1,
-        "assetUrl": "https://github.com/SECTL/SecAgent-Screen-Understanding-Plugin/releases/download/v0.1.2/screen-understanding-0.1.2.zip",
-        "sha256": "2b104995740a294fc420ebf9d811a03dc4bd148c06d9414b10a4ed1485912528",
+        "assetUrl": "https://github.com/SECTL/SecAgent-Screen-Understanding-Plugin/releases/download/v0.1.3/screen-understanding-0.1.3.zip",
+        "sha256": "372cd8111abbf53661a5547bfcf7f1360587716caa74388bd9d7197094c59962",
         "permissions": [
           "agent.tools",
           "agent.skills"
@@ -147,5 +147,5 @@
       }
     }
   ],
-  "signature": "ATXDvXPmsQ3v20FwMhsG4LzkGW4h/CBs+Az8dqo5a5DoiitTufe0GfZSstWUWcSg1VXn8BXOywJ8GNEb+zo/DA=="
+  "signature": "Fdt7LmnRDq5cfTzL7fxXkKo2/Pf5rhO6arysG10trSDkE2b8qOs6glPcmp1wz9rFqY4KXWvCqcfJnMvkCOtqDQ=="
 }
