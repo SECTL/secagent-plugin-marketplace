@@ -3,9 +3,10 @@ name: Generate signed marketplace index
 on:
   workflow_dispatch:
   schedule:
-    # Hourly refresh so plugin releases reach the signed index without a manual
-    # dispatch or a metadata commit. The generator skips no-op runs.
-    - cron: "23 * * * *"
+    # Refresh every 20 minutes so plugin releases reach the signed index
+    # without a manual dispatch or a metadata commit. The generator skips
+    # no-op runs.
+    - cron: "7,27,47 * * * *"
   push:
     paths:
       - "plugins/*.json"

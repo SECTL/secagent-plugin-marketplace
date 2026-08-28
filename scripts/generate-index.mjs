@@ -43,8 +43,9 @@ const unsigned = {
   generatedAt: process.env.MARKETPLACE_GENERATED_AT || new Date().toISOString(),
   plugins
 };
-// Scheduled runs execute hourly; keep the existing index (and its generatedAt)
-// when the resolved plugins are unchanged so no-op runs create no commits.
+// Scheduled runs execute every 20 minutes; keep the existing index (and its
+// generatedAt) when the resolved plugins are unchanged so no-op runs create no
+// commits.
 if (!process.env.MARKETPLACE_GENERATED_AT && hasUnchangedPlugins(indexPath, plugins)) {
   console.log(`No plugin releases changed; keeping ${path.relative(root, indexPath)}.`);
 } else {
