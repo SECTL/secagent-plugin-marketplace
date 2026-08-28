@@ -34,7 +34,7 @@ Each plugin file describes stable metadata and a GitHub Release asset template. 
 
 Generate the official Ed25519 key pair outside the repository. Put only the PKCS#8 private-key PEM in the GitHub Actions repository secret `MARKETPLACE_ED25519_PRIVATE_KEY`. The public-key PEM is embedded in SecAgent as its official trust root. Do not commit either private key or a private-key file.
 
-The workflow in `.github/workflows/generate-index.yml` regenerates and signs `index.json` whenever a plugin metadata file changes. A plugin release does not require a commit here: publish the matching Release in that plugin's repository.
+The workflow in `.github/workflows/generate-index.yml` regenerates and signs `index.json` whenever a plugin metadata file changes and on an hourly schedule. A plugin release does not require a commit here: publish the matching Release in that plugin's repository and the next scheduled run picks it up within an hour (no-op runs leave `index.json` untouched).
 
 For local generation:
 

@@ -1,0 +1,4 @@
+# Plugin metadata files are hashed byte-for-byte into index.json and served
+# LF-normalized by raw.githubusercontent.com. Force LF so local generation on
+# Windows (autocrlf) produces the same hashes as CI.
+* text=auto eol=lf

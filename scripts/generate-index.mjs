@@ -43,9 +43,24 @@ const unsigned = {
   generatedAt: process.env.MARKETPLACE_GENERATED_AT || new Date().toISOString(),
   plugins
 };
-const signature = crypto.sign(null, Buffer.from(canonicalize(unsigned), "utf8"), crypto.createPrivateKey(privateKeyText)).toString("base64");
-fs.writeFileSync(indexPath, `${JSON.stringify({ ...unsigned, signature }, null, 2)}\n`, "utf8");
-console.log(`Generated ${path.relative(root, indexPath)} with ${plugins.length} plugins.`);
+// Scheduled runs execute hourly; keep the existing index (and its generatedAt)
+// when the resolved plugins are unchanged so no-op runs create no commits.
+if (!process.env.MARKETPLACE_GENERATED_AT && hasUnchangedPlugins(indexPath, plugins)) {
+  console.log(`No plugin releases changed; keeping ${path.relative(root, indexPath)}.`);
+} else {
+  const signature = crypto.sign(null, Buffer.from(canonicalize(unsigned), "utf8"), crypto.createPrivateKey(privateKeyText)).toString("base64");
+  fs.writeFileSync(indexPath, `${JSON.stringify({ ...unsigned, signature }, null, 2)}\n`, "utf8");
+  console.log(`Generated ${path.relative(root, indexPath)} with ${plugins.length} plugins.`);
+}
+
+function hasUnchangedPlugins(indexPath, plugins) {
+  try {
+    const existing = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+    return canonicalize(existing.plugins) === canonicalize(plugins);
+  } catch {
+    return false;
+  }
+}
 
 async function resolveLatestRelease(metadata) {
   const spec = metadata.release;
