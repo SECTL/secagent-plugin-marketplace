@@ -1,7 +1,28 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-28T13:34:48.575Z",
+  "generatedAt": "2026-08-29T12:41:22.385Z",
   "plugins": [
+    {
+      "id": "class-widgets",
+      "path": "plugins/class-widgets.json",
+      "sha256": "de91f02051298b27d7360e151d07b8d7dd608b95eb153d3bff1a3570f04637f2",
+      "latest": {
+        "version": "0.1.0",
+        "minHostApiVersion": 1,
+        "assetUrl": "https://github.com/SECTL/CW-SecAgent-Connector/releases/download/v0.1.0/class-widgets-0.1.0.zip",
+        "sha256": "a8dcd160b7ac33ed939391eef015127a0860366796e34f2de19f4de2ee82a8c3",
+        "permissions": [
+          "agent.tools",
+          "agent.skills",
+          "network.http"
+        ],
+        "platforms": [
+          "darwin",
+          "linux",
+          "win32"
+        ]
+      }
+    },
     {
       "id": "classisland-connector",
       "path": "plugins/classisland-connector.json",
@@ -147,5 +168,5 @@
       }
     }
   ],
-  "signature": "Fdt7LmnRDq5cfTzL7fxXkKo2/Pf5rhO6arysG10trSDkE2b8qOs6glPcmp1wz9rFqY4KXWvCqcfJnMvkCOtqDQ=="
+  "signature": "rXpy44zNi8WKEYJQMY/U7BMOdt5iRPpl+KF88WDFoNVgfO0AfTpIb1r8MwCbiR2Gj9OES9xX2/moAF1yBpFKCg=="
 }
