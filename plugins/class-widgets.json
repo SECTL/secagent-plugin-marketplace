@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "class-widgets",
+  "format": "secagent",
+  "name": "Class Widgets联动",
+  "description": "让 SecAgent 查询 Class Widgets 课表状态并向课堂推送提醒",
+  "repository": "https://github.com/SECTL/CW-SecAgent-Connector",
+  "icon": "https://raw.githubusercontent.com/SECTL/CW-SecAgent-Connector/main/icon.svg",
+  "readme": "https://raw.githubusercontent.com/SECTL/CW-SecAgent-Connector/main/README.md",
+  "minHostApiVersion": 1,
+  "permissions": ["agent.tools", "agent.skills", "network.http"],
+  "platforms": ["darwin", "linux", "win32"],
+  "release": {
+    "provider": "github",
+    "owner": "SECTL",
+    "repo": "CW-SecAgent-Connector",
+    "assetName": "class-widgets-{version}.zip",
+    "includePrerelease": false
+  }
+}
