@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-29T12:41:22.385Z",
+  "generatedAt": "2026-09-05T01:24:41.043Z",
   "plugins": [
     {
       "id": "class-widgets",
@@ -26,7 +26,7 @@
     {
       "id": "classisland-connector",
       "path": "plugins/classisland-connector.json",
-      "sha256": "e410371b6e05b2e8e98a365c51d9e840537222700569c6d6fa29da9f3b54d76d",
+      "sha256": "2e3d8719693f5f1b14d6e20713c6b5be92990ce4ecab291f2ce7a109a5e05bee",
       "latest": {
         "version": "1.0.2",
         "minHostApiVersion": 1,
@@ -36,6 +36,7 @@
           "agent.tools",
           "agent.skills",
           "agent.prompts",
+          "agent.pre_rules",
           "network.http"
         ],
         "platforms": [
@@ -168,5 +169,5 @@
       }
     }
   ],
-  "signature": "rXpy44zNi8WKEYJQMY/U7BMOdt5iRPpl+KF88WDFoNVgfO0AfTpIb1r8MwCbiR2Gj9OES9xX2/moAF1yBpFKCg=="
+  "signature": "5tHuof1+PL5S9IiXu1j2P93C22IphELx0mCSsvNHZ4v3gRhWiMRT/1uzdgby/gXPERciAQNv0huj3fjWcSLACg=="
 }
